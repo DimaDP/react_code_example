@@ -1,0 +1,17 @@
+.container {
+  min-height: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.types {
+  position: relative;
+  z-index: 2;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: row;
+  background-color: #F5F5F5;
+}

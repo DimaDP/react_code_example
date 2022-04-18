@@ -1,0 +1,65 @@
+@import '../../../scss-variables';
+
+.container {
+  background-color: $main_bgc;
+  height: 48px;
+  font-size: 16px;
+  color: $input_text_color;
+}
+
+.container th {
+  font-weight: 500;
+}
+
+tr {
+  width: 100%;
+}
+
+.th {
+  //width: calc(100%/8 - 155px);
+  width: 17%;
+  min-width: 120px;
+  padding: 18px 18px 6px 0;
+}
+
+.thSmall {
+  width: 11%;
+  padding: 18px 0 6px;
+}
+
+.firstTh {
+  width: 135px;
+  min-width: 120px;
+  padding: 18px 0 6px 0;
+}
+
+.thBig {
+  width: 16%;
+  max-width: 230px;
+  padding: 18px 18px 6px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  min-height: 40px;
+}
+
+.buttons {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.icon {
+  background-image: url('../../../assets/images/sort.svg');
+  width: 10px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

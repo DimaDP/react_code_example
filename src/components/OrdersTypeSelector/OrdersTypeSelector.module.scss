@@ -1,0 +1,73 @@
+@import '../../scss-variables';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 930px;
+  justify-content: space-between;
+}
+
+.item {
+  padding: 0 30px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  color: #7D8286;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .3s ease;
+  @media screen and (max-width: 1280px) {
+    padding: 0 6px;
+  }
+}
+
+.counter {
+  margin-left: 10px;
+  border-radius: 35px;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 0 4px;
+  color: #191A1B;
+  background-color: $base_color;
+  transition: background-color .3s ease;
+  text-align: center;
+}
+
+.counterHidden {
+  opacity: 0;
+}
+
+.selected {
+  color: #000000;
+  position: relative;
+}
+
+.selected:after {
+  opacity: 1;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px 4px 0 0;
+  background-color: $title_color;
+  z-index: 1;
+}
+
+.selected .counter {
+  color: $title_color;
+  background-color: #DAECFF;
+}
+
+.divider {
+  //margin-right: 40px;
+}
+
+.dividerLine {
+  border: 0.5px solid #BFBFBF;
+  width: 0;
+  height: 100%;
+}

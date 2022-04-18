@@ -1,0 +1,25 @@
+@import '../../scss-variables';
+
+.container {
+  position: relative;
+}
+
+.input {
+  width: 211px;
+  height: 44px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 16px;
+
+  border: 1px solid $select_border_color;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 12px 40px 12px 40px;
+
+  background: $simple_white url('../../assets/images/Search.svg') no-repeat 16px center;
+}
+
+.input:focus {
+  border: 1px solid #439FFE;
+  box-shadow: 0 0 10px rgba(26, 27, 31, 0.05);
+}

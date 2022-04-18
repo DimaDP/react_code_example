@@ -1,0 +1,11 @@
+@import '../../scss-variables';
+
+.container {
+  padding: 0;
+}
+
+@media screen and ( min-width: $max_screen) {
+  .container {
+    padding: 0 calc(50% - #{$half_table_width});
+  }
+}

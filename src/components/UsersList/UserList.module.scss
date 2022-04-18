@@ -1,0 +1,106 @@
+@import '../../scss-variables';
+
+.container {
+  flex-grow: 1;
+  position: relative;
+  overflow-x: auto;
+}
+
+.table {
+  table-layout: fixed;
+  min-width: 700px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 2px;
+  margin-bottom: 80px;
+}
+
+.pagination {
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+  display: flex;
+  background-color: white;
+  padding: 0;
+}
+
+.pagination a {
+  display: block;
+  cursor: pointer;
+  height: 100%;
+}
+
+.pagination li {
+  list-style-type: none;
+}
+
+.pageClassName {
+  width: 44px;
+  height: 44px;
+  border: 1px solid $pagination_border_color;
+  border-left: none;
+
+  font-size: 16px;
+  line-height: 44px;
+  text-align: center;
+  transition: background-color .3s ease;
+}
+
+.pageClassName:hover {
+  background-color: #E5E6E7;
+}
+
+.pageClassName.activeClassName:hover {
+  background-color: #439FFE;
+}
+
+.activeClassName {
+  background-color: #439FFE;
+  color: $simple-white;
+}
+
+.previousClassName {
+  width: 44px;
+  height: 44px;
+  border: 1px solid $pagination_border_color;
+  background-image: url('../../assets/images/arrow-left.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nextClassName {
+  width: 44px;
+  height: 44px;
+  border: 1px solid $pagination_border_color;
+  border-left: none;
+  background-image: url('../../assets/images/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info {
+  padding-left: 100px;
+  height: 50px;
+  min-width: 300px;
+  line-height: 50px;
+  font-size: 16px;
+  color: $placeholder_color;
+}
+
+.notFound {
+  margin: 0 auto;
+  background-image: url('../../assets/images/Social 02.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 280px;
+  height: 280px;
+}
+
+.text {
+  width: 280px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #7D8286;
+}

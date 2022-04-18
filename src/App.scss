@@ -1,0 +1,59 @@
+@import 'scss-variables';
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: local('Euclid Circular B Bold'), url('assets/fonts/font/EuclidCircularB-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: local('Euclid Circular B Regular'), url('assets/fonts/font/EuclidCircularB-Regular.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: local('Euclid Circular B SemiBold'), url('assets/fonts/font/EuclidCircularB-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: local('Euclid Circular B Light'), url('assets/fonts/font/EuclidCircularB-Light.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $main_bgc;
+  min-height: 100%;
+  font-family: $main_font;
+  font-weight: 500;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+input {
+  transition: all 0.2s ease;
+  font-family: $main_font;
+  font-weight: 500;
+  color: #191A1B;
+}
+
+input::placeholder {
+  color: $placeholder_color;
+}
+
+a:focus {
+  outline: none;
+}
+

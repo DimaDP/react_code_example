@@ -1,0 +1,102 @@
+@import '../../scss-variables';
+
+.container {
+  flex-grow: 1;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.table {
+  table-layout: fixed;
+  min-width: 1050px;
+  width: 100%;
+  //border-collapse: separate;
+  border-spacing: 0 2px;
+  margin-bottom: 132px;
+}
+
+.pagination {
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+  display: flex;
+  background-color: white;
+  padding: 0;
+}
+
+.pagination a {
+  display: block;
+  cursor: pointer;
+  height: 100%;
+}
+
+.pagination li {
+  list-style-type: none;
+}
+
+.pageClassName {
+  width: 44px;
+  height: 44px;
+  border: 1px solid $pagination_border_color;
+  border-left: none;
+
+  font-size: 16px;
+  line-height: 44px;
+  text-align: center;
+  transition: background-color .3s ease;
+}
+
+.pageClassName:hover {
+  background-color: #E5E6E7;
+}
+
+.pageClassName.activeClassName:hover {
+  background-color: #439FFE;
+}
+
+.activeClassName {
+  background-color: #439FFE;
+  color: $simple-white;
+}
+
+.previousClassName {
+  width: 44px;
+  height: 44px;
+  border: 1px solid $pagination_border_color;
+  background-image: url('../../assets/images/arrow-left.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nextClassName {
+  width: 44px;
+  height: 44px;
+  border: 1px solid $pagination_border_color;
+  border-left: none;
+  background-image: url('../../assets/images/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info {
+  padding-left: 100px;
+  height: 50px;
+  min-width: 300px;
+  line-height: 50px;
+  font-size: 16px;
+  color: $placeholder_color;
+}
+
+.text {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  color: #0D0D0E;
+}

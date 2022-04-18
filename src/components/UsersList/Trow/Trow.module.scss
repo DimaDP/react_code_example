@@ -1,0 +1,18 @@
+@import '/src/scss-variables';
+
+.container {
+  background-color: $simple_white;
+  font-size: 16px;
+}
+
+.td {
+  padding: 18px 18px 18px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.link {
+  user-select: none;
+}

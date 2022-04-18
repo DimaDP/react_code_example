@@ -1,0 +1,36 @@
+@import '../../scss-variables';
+
+.header {
+  background-color: $simple_white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+  justify-content: space-between;
+
+  &_title {
+    display: flex;
+    align-items: center;
+  }
+
+  &_exit {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: $exit_font_color;
+  }
+
+  &_icon {
+    width: 18px;
+    height: 21px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and ( min-width: $max_screen) {
+  .header {
+    padding: 0 calc(50% - #{$half_table_width});
+  }
+}
+

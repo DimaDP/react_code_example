@@ -1,0 +1,87 @@
+@import '../../scss-variables';
+
+.modal {
+  position: fixed;
+  max-width: 465px;
+  max-height: 181px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  border: 1px solid #ccc;
+  background: $simple_white;
+  overflow: auto;
+  border-radius: 10px;
+  outline: none;
+  padding: 25px 0 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(42, 49, 54, 0.5);
+  z-index: 100;
+}
+
+.textBlock {
+  padding: 0 25px;
+}
+
+.heading {
+  font-size: 20px;
+  line-height: 24px;
+  color: #0D0D0E;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #0D0D0E;
+  margin: 16px 0;
+}
+
+.outlined {
+  color: $title_color;
+}
+
+.buttons {
+  width: 100%;
+  height: 45px;
+  border-top: 1px solid #E5E6E7;
+  display: flex;
+}
+
+.buttonBack {
+  flex: 1;
+  border: none;
+  border-right: 1px solid #E5E6E7;
+  text-transform: uppercase;
+  color: $input_text_color;
+  font-size: 16px;
+  outline: none;
+  background: $simple_white;
+  cursor: pointer;
+  font-family: $main_font;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.buttonSubmit {
+  flex: 1;
+  text-transform: uppercase;
+  color: $title_color;
+  font-size: 16px;
+  outline: none;
+  background: $simple_white;
+  border: none;
+  cursor: pointer;
+  font-family: $main_font;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+

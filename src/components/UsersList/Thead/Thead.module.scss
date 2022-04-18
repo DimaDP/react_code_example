@@ -1,0 +1,45 @@
+@import '../../../scss-variables';
+
+.container {
+  background-color: #F5F5F5;
+  height: 48px;
+  font-size: 16px;
+  color: $input_text_color;
+}
+
+.container th {
+  font-weight: 500;
+}
+
+tr {
+  width: 100%;
+}
+
+.th {
+  width: 25%;
+  min-width: 120px;
+  padding: 18px 18px 18px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.icon {
+  background-image: url('../../../assets/images/sort.svg');
+  width: 10px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

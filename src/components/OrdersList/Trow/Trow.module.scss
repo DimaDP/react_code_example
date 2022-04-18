@@ -1,0 +1,31 @@
+@import '/src/scss-variables';
+
+.container {
+  background-color: $simple_white;
+  font-size: 16px;
+}
+
+.td {
+  padding: 6px 18px 6px 0;
+  min-height: 72px;
+}
+
+.tdSmall {
+  padding: 6px 0 6px;
+}
+
+.td div {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+}
+
+.center {
+  text-align: center;
+}
+
+.first {
+  padding-left: 100px;
+  display: flex;
+  align-items: center;
+}

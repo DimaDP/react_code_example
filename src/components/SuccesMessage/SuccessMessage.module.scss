@@ -1,0 +1,26 @@
+.container {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  height: 52px;
+  width: fit-content;
+  background: rgba(58, 58, 58, 0.7);
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 60px;
+}
+
+.message {
+  font-size: 16px;
+  line-height: 20px;
+  color: #CBCBCB;
+}
+
+.icon {
+  width: 16px;
+  height: 20px;
+  margin-right: 10px;
+}
